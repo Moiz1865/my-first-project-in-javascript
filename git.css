@@ -1,4 +1,88 @@
-*{
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+}
+
+.directory-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.searchbox {
+    margin-bottom: 30px;
+}
+
+.searchbox input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #666;
+    outline: none;
+}
+
+.searchbox input::placeholder {
+    color: #aaa;
+}
+
+.userlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    /* This creates the subtle hover effect */
+}
+
+.user-card:hover {
+    background-color: #fafafa;
+}
+
+.user-card img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #111;
+    font-weight: 700;
+}
+
+.user-info p {
+    margin: 4px 0 0;
+    color: #555;
+    font-size: 1rem;
 }
